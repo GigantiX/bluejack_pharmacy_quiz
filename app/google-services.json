@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "734932786907",
+    "project_id": "mcs-system-53607",
+    "storage_bucket": "mcs-system-53607.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:734932786907:android:f54b6382678dd8f23a36fe",
+        "android_client_info": {
+          "package_name": "com.example.bluejack_pharmacy_quiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "734932786907-q6ravdtbb2htgpvmp39lbp9plm5fv9nh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bluejack_pharmacy_quiz",
+            "certificate_hash": "654836b1ee157c9330ab9fba0d0275dc44ee0d65"
+          }
+        },
+        {
+          "client_id": "734932786907-sl546ouf8sumnmbi38hiqflop1437r4a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBausuYSi4thUARm9Kn-OcfCBfIRQprq8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "734932786907-sl546ouf8sumnmbi38hiqflop1437r4a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cart"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/img3"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blackmores Bio C"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blackmores Bio C adalah salah satu produk suplemen yang diproduksi oleh Blackmores, perusahaan nutrisi dan suplemen kesehatan terkemuka. Blackmores Bio C merupakan suplemen vitamin C yang diformulasikan dengan sumber alami dari vitamin C yaitu ekstrak buah-buahan dan sayuran. Vitamin C merupakan nutrisi penting yang diperlukan oleh tubuh untuk menjaga kesehatan dan berfungsi sebagai antioksidan untuk melawan radikal bebas."
+            android:layout_marginTop="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Rp. 100.000"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/product_edtx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Quantity">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/product_qty"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="30dp">
+        <Button
+            android:id="@+id/product_addToCart"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="@color/green_1"
+            android:text="Add to cart"
+            android:textAllCaps="false"
+            android:textSize="17dp"
+            app:cornerRadius="50dp"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    tools:context=".HomePage">
+    <LinearLayout
+        android:id="@+id/topbarHomePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/logoonly"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+            <Button
+                android:id="@+id/hompage_logout"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:gravity="right"
+                android:backgroundTint="@color/transparent"
+                android:text="Log Out"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:stateListAnimator="@null"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/homepage_aboutus"
+        android:layout_below="@id/topbarHomePage"
+        android:layout_marginLeft="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/transparent"
+        android:text="About Us"
+        android:textAllCaps="false"
+        android:textColor="@color/green_1"
+        android:textSize="17dp"
+        android:stateListAnimator="@null"
+        app:cornerRadius="7dp"
+        app:strokeColor="@color/green_1"
+        app:strokeWidth="3dp" />
+    <LinearLayout
+        android:id="@+id/homepage_subtitle"
+        android:layout_below="@id/homepage_aboutus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicine"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/homepage_lay_rv"
+        android:layout_below="@id/homepage_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="0dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/homepage_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical"/>
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:id="@+id/homepage_cart"
+        android:elevation="10dp"
+        android:tint="@color/white"
+        android:src="@drawable/cart"/>
+
+</RelativeLayout>
