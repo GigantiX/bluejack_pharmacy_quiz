@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PhoneLogin">
+    <LinearLayout
+        android:id="@+id/lay1_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/backLogin"
+            style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+            app:icon="@drawable/back_arrow"
+            app:iconTint="@color/white"
+            android:layout_width="43dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/green_1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone OTP"
+            android:textSize="25dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="120dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay2_phone"
+        android:layout_below="@id/lay1_phone"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:src="@drawable/undraw_mobile_login_re_9ntv"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please enter your phone number to continue"
+            android:textSize="14dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lay3_phone"
+        android:layout_below="@id/lay2_phone"
+        android:layout_margin="25dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneForm1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            app:prefixText="+62"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Phone Number">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_NumberInput"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="1dp"/>
+        <Button
+            android:layout_marginLeft="10dp"
+            android:id="@+id/phone_getCode"
+            android:layout_width="110dp"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/green_1"
+            android:text="Send Code"
+            android:textAllCaps="false"
+            android:textSize="13dp"
+            app:cornerRadius="7dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lay4_phone"
+        android:layout_below="@id/lay3_phone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp">
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/phoneForm2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="SMS Code">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_OtpInput"
+                android:inputType="number"
+                android:imeOptions="actionNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <Button
+            android:layout_gravity="bottom"
+            android:layout_marginTop="30dp"
+
+            android:id="@+id/phone_verifyCode"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/green_1"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            app:cornerRadius="7dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
